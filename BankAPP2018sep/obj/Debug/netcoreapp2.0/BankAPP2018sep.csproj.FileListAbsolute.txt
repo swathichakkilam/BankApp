@@ -9,3 +9,14 @@ C:\Users\Swathi Karthik\source\repos\BankAPP2018sep\BankAPP2018sep\bin\Debug\net
 C:\Users\Swathi Karthik\source\repos\BankAPP2018sep\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.pdb
 C:\Users\Swathi Karthik\source\repos\BankAPP2018sep\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.dll
 C:\Users\Swathi Karthik\source\repos\BankAPP2018sep\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.pdb
+D:\GitHub\BankApp\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.deps.json
+D:\GitHub\BankApp\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.runtimeconfig.json
+D:\GitHub\BankApp\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.runtimeconfig.dev.json
+D:\GitHub\BankApp\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.dll
+D:\GitHub\BankApp\BankAPP2018sep\bin\Debug\netcoreapp2.0\BankAPP2018sep.pdb
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.csprojAssemblyReference.cache
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.csproj.CoreCompileInputs.cache
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.AssemblyInfoInputs.cache
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.AssemblyInfo.cs
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.dll
+D:\GitHub\BankApp\BankAPP2018sep\obj\Debug\netcoreapp2.0\BankAPP2018sep.pdb
