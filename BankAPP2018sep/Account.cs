@@ -5,7 +5,18 @@ using System.Text;
 namespace BankAPP2018sep
 {
     /// <summary>
-    /// 
+    /// Defines a Bank Application and its respective Code
+    /// </summary>
+    
+    enum TypeofAccount
+    {
+        Savings,
+        Checking,
+        CurrentDeposit,
+        Loan
+    }
+    /// <summary>
+    /// Enum stores its variables as numbers hence its a value type
     /// </summary>
     class Account
     {

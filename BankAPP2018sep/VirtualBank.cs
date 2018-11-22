@@ -26,7 +26,11 @@ namespace BankAPP2018sep
          * is the class Account type  as the account will be created
          with the bank*/
          //since Virtual Bank is a static class CreateAccount method is also static
-        public static Account CreateAccount(string EmailID, string Accounttype, decimal InitialDeposit)
+         //defaulting parameter to checking account in the code below
+         /*As a general rule of thumb all required parameters should be
+          * mentioned first and then optional parameters in the method  */ 
+        public static Account CreateAccount(string EmailID, 
+            string Accounttype ="Checking",decimal InitialDeposit = 0)
         {
             var account = new Account
             {

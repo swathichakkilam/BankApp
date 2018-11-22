@@ -12,7 +12,9 @@ namespace BankAPP2018sep
             Console.WriteLine($"AN:{account1.AccountNumber},AccType:{account1.AccountType},Balance:{account1.Balance},EA:{account1.EmailAddress}");
 
 
-            var account2 = VirtualBank.CreateAccount("user2@bank.com", "Checking", 9000M);
+            /*if we want to pick and choose optional parameters and not follow the same 
+            order in which all parameters are declared  then we need to mention the optional parameter in the key value pair format*/
+            var account2 = VirtualBank.CreateAccount("user2@bank.com", InitialDeposit:500.50M);
            /* {
                // AccountNumber = 229,
                 AccountType = "Checking",
