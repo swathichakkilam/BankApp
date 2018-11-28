@@ -30,12 +30,12 @@ namespace BankAPP2018sep
          /*As a general rule of thumb all required parameters should be
           * mentioned first and then optional parameters in the method  */ 
         public static Account CreateAccount(string EmailID, 
-            string Accounttype ="Checking",decimal InitialDeposit = 0)
+            TypeofAccount Accounttype =TypeofAccount.Checking,decimal InitialDeposit = 0)
         {
             var account = new Account
             {
                 EmailAddress = EmailID,
-                AccountType = Accounttype
+                 AccountType = Accounttype
 
             };
             /*since balance cannot be set by the customer and it has to be set via Bank

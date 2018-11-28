@@ -17,6 +17,8 @@ namespace BankAPP2018sep
     }
     /// <summary>
     /// Enum stores its variables as numbers hence its a value type
+    /// a number is associated with each of its variables 
+    /// here it is Savings with 0 as its default number 
     /// </summary>
     class Account
     {
@@ -38,7 +40,7 @@ namespace BankAPP2018sep
         /// <summary>
         /// AccountType can be Savings or Checking Account
         /// </summary>
-        public string AccountType { get; set; }
+        public TypeofAccount AccountType { get; set; }
 
         /// <summary>
         /// Balance denotes the amount available for withdrawal in the bank 
