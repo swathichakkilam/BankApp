@@ -29,9 +29,9 @@ namespace BankAPP2018sep
             // Console.WriteLine("Hello World!");
            
     //Trying to create a Menu that displays some options for user to select from in the Bank Application
-                 Console.WriteLine("******************");
+                 Console.WriteLine("************************");
             Console.WriteLine("Welcome to my Bank App");
-            Console.WriteLine("*************");
+            Console.WriteLine("*************************");
             Console.WriteLine("0.Exit");
             Console.WriteLine("1.Create an Account");
             Console.WriteLine("2.Deposit Money");
@@ -48,9 +48,22 @@ namespace BankAPP2018sep
                     Console.Write("Email Address:");
                     var emailaddress= Console.ReadLine();
                     /*Converting an Enum to an Array to enable looping through
-                    the array of enum to access the values of type enum one at a time*/
+                    the array of enum to access the values of datatype or valuetype enum one at a time*/
                     //the keyword typeof in C# gets the user the underlying type of(eg:int or type or bool etc)  that type 
-                    Enum.GetNames(typeof(TypeofAccount));
+                  
+             //accountype is the array that holds the values of type enum that have been converted to a string array 
+                    var accounttype = Enum.GetNames(typeof(TypeofAccount));
+                    for(var i=0;i<accounttype.Length;i++)
+                    {
+                        /*everything inside the flower brackets in an inline is like 
+                        a placeholder which will be replaced when priting to the console*/
+                        Console.WriteLine($"{i + 1} {accounttype[i]}");
+                    }
+                    Console.Write("Select an Account Type:");
+                    //reading the user selected option and storing it in acctypeoption variable
+                    var acctypeoption = Console.ReadLine();
+                    break;
+                       
                 default:
                     break;
             }
