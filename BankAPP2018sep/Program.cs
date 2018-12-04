@@ -39,7 +39,7 @@ namespace BankAPP2018sep
             Console.WriteLine("4.Print all Accounts");
             Console.Write("Please Select an option: ");
             var option = Console.ReadLine();
-
+            #region
             switch (option)
             {
                 case "0":
@@ -61,11 +61,34 @@ namespace BankAPP2018sep
                     }
                     Console.Write("Select an Account Type:");
                     //reading the user selected option and storing it in acctypeoption variable
-                    var acctypeoption = Console.ReadLine();
+                    var acctypeoption = Convert.ToInt32( Console.ReadLine());
+
+                    /*Converting the selected option into respective zero based index option of the array 
+                    //and grabbing the respective account type string and forcibly requesting compiler to convert 
+                    //the array value at the respective index to an Enum Type using 'typeof'keyword
+                    //to get to the underlying type of the data(here it is of type TypeofAccount)
+                    //the Parse keyword runs a method named Parse that 
+                    //takes any string value and converts it into the desired type
+                    //basically trying to Parse the users option back into an Enum 
+                    //note : in C# every class generally inherits from a Parent Class called Object
+                    
+                    Enum.Parse(typeof(TypeofAccount), accounttype[acctypeoption - 1]);*/
+
+                    /*Using Generics to Parse function in a more generalized manner instead of 
+                    default Parse operation to give the user the user specific output of Type TypeofAccount(Enum)
+                    and storing it in a new variable  accountType which holds the Enum value selected by BankUser*/
+                     var Accounttype = Enum.Parse<TypeofAccount>(accounttype[acctypeoption - 1]);
+                    /*accepting Amount from user and reading it into the variable Initial Deposit*/
+                    Console.Write("Enter the Amount to Deposit:");
+                    var InitialDeposit = Convert.ToDecimal( Console.ReadLine());
+
+                    var account =VirtualBank.CreateAccount(emailaddress, Accounttype,InitialDeposit);
+                    Console.WriteLine($"AN:{account.AccountNumber},AT:{account.AccountType},Balance:{account.Balance}");
                     break;
                        
                 default:
                     break;
+                    #endregion
             }
 
         }
